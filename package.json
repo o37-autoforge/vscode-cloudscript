@@ -1,0 +1,64 @@
+{
+  "name": "cloudscript",
+  "displayName": "Cloudscript",
+  "description": "Language support for Cloudscript.",
+  "version": "0.0.4",
+  "icon": "./images/cloudscriptlogo.png",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "publisher": "Autoforge",
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Panchangam18/cloudscript-vs-code-extension.git"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+  "onCommand:cloudscript.insertTemplate"
+],
+  "contributes": {
+    "languages": [
+      {
+        "id": "cloudscript",
+        "aliases": [
+          "Cloudscript",
+          "cloudscript"
+        ],
+        "extensions": [
+          ".cloud"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon":{
+          "dark": "./images/cloudscriptlogo.png",
+          "light": "./images/cloudscriptlogo.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cloudscript",
+        "scopeName": "main.cloud",
+        "path": "./syntaxes/cloudscript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "cloudscript",
+        "path": "./snippets/cloud.json"
+      }
+    ],
+    "completionItemProvider": [
+      {
+        "language": "cloudscript",
+        "scheme": "file",
+        "triggerCharacters": ["="]
+      }
+    ]
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
+  }
+}

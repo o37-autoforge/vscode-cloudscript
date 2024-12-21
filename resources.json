@@ -1,0 +1,12 @@
+{
+  "aws_instance": {
+    "instance_type": "",
+    "ami": "",
+    "subnet_id": "",
+    "vpc_security_group_ids": [""],
+    "tags": {
+      "Name": ""
+    },
+    "depends_on": [""]
+  }
+}

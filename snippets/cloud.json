@@ -1,0 +1,22 @@
+{
+    "Default Cloud Script Template": {
+      "prefix": "cloud-template",
+      "body": [
+        "providers {}",
+        "",
+        "service \"name\" {",
+        "    provider = \"\"",
+        "",
+        "    infrastructure {}",
+        "",
+        "    configuration {}",
+        "",
+        "    containers {}",
+        "",
+        "    deployment {}",
+        "}"
+      ],
+      "description": "Insert a default cloud script template"
+    }
+  }
+  
